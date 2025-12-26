@@ -3,9 +3,9 @@ const router = express.Router();
 const pemain = require('../controllers/pemainController');
 const auth = require('../middleware/authMiddleware');
 
-router.get('/', auth, pemain.getAll);
-router.post('/', auth, pemain.create);
-router.put('/:id', auth, pemain.update);
-router.delete('/:id', auth, pemain.delete);
+router.get('/', auth.verifyToken,  pemain.getAll);
+router.post('/', auth.verifyToken,  pemain.create);
+router.put('/:id', auth.verifyToken,  pemain.update);
+router.delete('/:id', auth.verifyToken, pemain.delete);
 
 module.exports = router;
