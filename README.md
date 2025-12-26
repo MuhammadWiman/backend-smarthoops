@@ -27,8 +27,21 @@ SmartHoops adalah sistem pendukung keputusan (SPK) untuk seleksi atlet basket me
 ```bash
 git clone https://github.com/MuhammadWiman/backend-smarthoops.git
 cd backend-smarthoops
-
 ```
+
+##  Persiapan Database 
+
+Repositori ini menyertakan file SQL untuk mempermudah pengaturan database Anda di folder `/database`.
+
+### Langkah-langkah:
+
+1. Buat database baru bernama `spk_ahp_basket`.
+2. **Import Struktur**: Jalankan/import file `database/schema.sql` untuk membuat semua tabel dan relasi *Foreign Key*.
+
+> **Catatan**: Pastikan relasi `ON DELETE CASCADE` aktif untuk menjaga integritas data saat ada penghapusan user atau kriteria.
+
+---
+
 ### 3. Instalasi Dependensi
 ```bash
 npm install
