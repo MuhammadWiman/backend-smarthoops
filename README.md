@@ -28,6 +28,7 @@ SmartHoops adalah sistem pendukung keputusan (SPK) untuk seleksi atlet basket me
 git clone https://github.com/MuhammadWiman/backend-smarthoops.git
 cd backend-smarthoops
 ```
+---
 
 ##  Persiapan Database 
 
